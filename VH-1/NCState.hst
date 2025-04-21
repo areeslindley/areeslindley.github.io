@@ -1,0 +1,13 @@
+ History File for VH-1 simulation run on 10 / 29 / 2018
+
+ Sod shock tube in 1 dimension
+Grid dimensions:  100
+
+Ratio of specific heats = 1.400
+Pressure Ratio = 0.100
+Density Ratio = 0.125
+
+Wrote NCState1001.dat    to disk at time = 8.04694E-02 (ncycle =     20)
+Wrote NCState1002.dat    to disk at time = 1.59242E-01 (ncycle =     40)
+Wrote NCState1003.dat    to disk at time = 2.38049E-01 (ncycle =     60)
+Wrote NCState1004.dat    to disk at time = 3.13463E-01 (ncycle =     80)
