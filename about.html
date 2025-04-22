@@ -4,80 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me | Alun Rees</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
     <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
     <nav class="navbar">
         <div class="nav-content">
-            <div class="logo">
-                <a href="/">AR</a>
-            </div>
-            <div class="nav-links">
-                <a href="/">Home</a>
-                <a href="/about.html" class="active">About</a>
-                <a href="/projects.html">Projects</a>
-                <a href="/career.html">Career</a>
-                <a href="/blog.html">Blog</a>
-                <a href="/contact.html">Contact</a>
-            </div>
-            <button class="mobile-menu-btn">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+            <a href="index.html" class="nav-logo">Alun Rees</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="career.html">Career</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </div>
     </nav>
 
     <main>
         <section class="about-hero">
-            <div class="about-content">
+            <div class="container">
                 <h1>About Me</h1>
                 <div class="about-grid">
-                    <div class="about-text">
-                        <p>I'm a data scientist and developer passionate about transforming complex data into meaningful insights. With expertise in Python, machine learning, and web development, I strive to create solutions that make a real impact.</p>
-                        
-                        <h2>Skills</h2>
-                        <div class="skills-grid">
-                            <div class="skill-category">
-                                <h3>Programming</h3>
-                                <ul>
-                                    <li>Python</li>
-                                    <li>JavaScript</li>
-                                    <li>HTML/CSS</li>
-                                    <li>SQL</li>
-                                </ul>
-                            </div>
-                            <div class="skill-category">
-                                <h3>Data Science</h3>
-                                <ul>
-                                    <li>Machine Learning</li>
-                                    <li>Data Analysis</li>
-                                    <li>Statistical Modeling</li>
-                                    <li>Data Visualization</li>
-                                </ul>
-                            </div>
-                            <div class="skill-category">
-                                <h3>Tools & Technologies</h3>
-                                <ul>
-                                    <li>Git</li>
-                                    <li>Docker</li>
-                                    <li>Jupyter Notebooks</li>
-                                    <li>VS Code</li>
-                                </ul>
-                            </div>
+                    <div class="about-image">
+                        <img src="images/profile.jpg" alt="Alun Rees" class="profile-image">
+                    </div>
+                    <div class="about-content">
+                        <h2>Data Scientist | Statistical Methodologist | Developer</h2>
+                        <p class="about-bio">
+                            I currently work as a Senior Statistical Methodologist at the Office for National Statistics. I work on time series analysis and seasonal adjustment. I hold a PhD in Physics/Fusion energy.
+                        </p>
+                        <div class="location-info">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>York, United Kingdom</span>
                         </div>
-
-                        <div class="cta-section">
-                            <a href="/assets/cv.pdf" class="btn primary" download>Download CV</a>
+                        <div class="social-links">
+                            <a href="https://github.com/areeslindley" target="_blank" class="social-link">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="https://www.linkedin.com/in/alun-rees/" target="_blank" class="social-link">
+                                <i class="fab fa-linkedin"></i> LinkedIn
+                            </a>
                         </div>
                     </div>
-                    <div class="about-image">
-                        <div class="image-placeholder">
-                            <!-- Placeholder for profile image -->
-                            <span>Profile Image</span>
-                        </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills-section">
+            <div class="container">
+                <h2>Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Programming</h3>
+                        <ul class="skills-list">
+                            <li>Python</li>
+                            <li>R</li>
+                            <li>SQL</li>
+                            <li>SAS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Data Science</h3>
+                        <ul class="skills-list">
+                            <li>Git</li>
+                            <li>Forecasting</li>
+                            <li>Backcasting</li>
+                            <li>Machine Learning</li>
+                            <li>NLP</li>
+                            <li>Clustering</li>
+                            <li>ARIMA</li>
+                            <li>X13-ARIMA-SEATS</li>
+                            <li>Statistical Analysis</li>
+                            <li>Monte Carlo Simulations</li>
+                            <li>Predictive Analytics</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -85,25 +89,31 @@
     </main>
 
     <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Alun Rees</h3>
-                <p>Data Scientist & Developer</p>
-            </div>
-            <div class="footer-section">
-                <h4>Connect</h4>
-                <div class="social-links">
-                    <a href="https://github.com/yourusername" target="_blank">GitHub</a>
-                    <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
-                    <a href="mailto:your.email@example.com">Email</a>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Alun Rees</h3>
+                    <p>Data Scientist | Statistical Methodologist | Developer</p>
+                </div>
+                <div class="footer-links">
+                    <a href="https://github.com/areeslindley" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/alun-rees/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:alun.rees-lindley@outlook.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
                 </div>
             </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 Alun Rees. All rights reserved.</p>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Alun Rees. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 
+    <script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
 </body>
 </html> 

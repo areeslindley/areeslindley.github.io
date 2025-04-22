@@ -1,25 +1,68 @@
-# Alun Rees - Personal Portfolio Website
+# Alun Rees - Personal Portfolio
 
-A modern, responsive portfolio website showcasing my work as a data scientist and developer. Built with HTML, CSS, and JavaScript.
+Welcome to my personal portfolio website! I'm a Data Scientist and Statistical Methodologist with expertise in time series analysis, seasonal adjustment, and computational physics.
 
-## Features
+## About Me
 
-- Clean, modern design with smooth animations
-- Responsive layout that works on all devices
-- Sections for projects, career history, and blog
-- Contact form for inquiries
-- Optimized for performance and SEO
+I currently work as a Senior Statistical Methodologist at the Office for National Statistics, where I focus on time series analysis and seasonal adjustment of national statistics. Previously, I worked as a Senior Data Scientist at the Government Office for Science, providing global insights on science and technology. I hold a PhD in Physics from the University of Warwick, specializing in Inertial Confinement Fusion and Computational Plasma Physics.
 
-## Pages
+## Featured Projects
 
-1. **Home** - Introduction and featured project
-2. **About** - Background, skills, and bio
-3. **Projects** - Portfolio of work with descriptions
-4. **Career** - Timeline of experience and education
-5. **Blog** - Articles and insights (placeholder)
-6. **Contact** - Contact form and information
+### UK House Prices
+A web application for searching and visualizing UK house price data, providing an intuitive interface for exploring property market trends.
+- **Technologies**: Java, Python, HTML
+- **Live Demo**: [View on Replit](https://replit.com/@arees05/UkHousePrices)
+- **GitHub**: [View Repository](https://github.com/areeslindley/UkHousePrices)
 
-## Setup
+### Rugby Analytics
+A comprehensive analytics system for rugby data analysis and prediction, featuring historical fixture analysis and match outcome predictions.
+- **Technologies**: Python
+- **Features**: Historical data analysis, Match predictions, Statistical insights
+- **GitHub**: [View Repository](https://github.com/areeslindley/rugby_analytics)
+
+## Technical Skills
+
+### Programming
+- Python
+- R
+- SQL
+- SAS
+- JavaScript
+
+### Data Science & Analytics
+- Time Series Analysis
+- Seasonal Adjustment
+- Forecasting & Backcasting
+- Machine Learning
+- NLP
+- Clustering
+- ARIMA
+- X13-ARIMA-SEATS
+- Statistical Analysis
+- Monte Carlo Simulations
+- Predictive Analytics
+- Git
+
+## Professional Achievements
+- 3rd place in No10 Data Science Hackathon at Imperial College London (April 2024)
+- Provided evidence supporting UK's participation in Horizon group
+- Presented pyGrams at ONS' Data Science Community Showcase
+- Presented research at multiple international conferences including:
+  - International Fusion Science and Applications conference (Osaka)
+  - UK High Power Laser conference (Oxford)
+  - Institute of Physics conference (Liverpool)
+
+## Website Structure
+
+The website consists of several key sections:
+1. **Home** - Introduction and featured projects
+2. **About** - Detailed background and skills
+3. **Projects** - Portfolio of data science and development work
+4. **Career** - Professional experience and achievements
+5. **Blog** - Technical articles and insights
+6. **Contact** - Professional contact information
+
+## Local Development
 
 1. Clone the repository:
 ```bash
@@ -27,73 +70,20 @@ git clone https://github.com/yourusername/alun-website.git
 cd alun-website
 ```
 
-2. Customize the content:
-   - Update personal information in HTML files
-   - Replace placeholder images
-   - Add your own projects and blog posts
-   - Update social media links
+2. Open `index.html` in your browser to view the site locally
 
-3. Test locally:
-   - Open `index.html` in your browser
-   - Test all links and forms
-   - Check responsive design on different devices
-
-## Deployment
-
-### GitHub Pages
-
-1. Create a new repository on GitHub
-2. Push your code to the repository
-3. Go to repository Settings > Pages
-4. Select the main branch as source
-5. Your site will be available at `https://yourusername.github.io/alun-website`
-
-### Custom Domain
-
-1. Purchase a domain (e.g., from Namecheap, GoDaddy)
-2. Add a CNAME file to your repository:
-```
-alun-rees.com
-```
-
-3. Configure DNS settings with your domain provider:
-   - Add a CNAME record pointing to `yourusername.github.io`
-   - Wait for DNS propagation (can take up to 24 hours)
-
-## Customization
-
-### Colors
-
-The color scheme can be modified in `css/styles.css`:
-```css
-:root {
-    --primary-color: #2d3436;
-    --secondary-color: #636e72;
-    --accent-color: #0984e3;
-    --background-color: #ffffff;
-    --text-color: #2d3436;
-    --light-gray: #f5f6fa;
-    --border-color: #dfe6e9;
-}
-```
-
-### Fonts
-
-The site uses Inter from Google Fonts. To change the font:
-1. Update the Google Fonts link in HTML files
-2. Modify the font-family in CSS
-
-## Maintenance
-
-- Regularly update project information
-- Add new blog posts
-- Keep dependencies up to date
-- Test the contact form functionality
-
-## License
-
-This project is open source and available under the MIT License.
+3. The site uses a simple structure:
+- HTML files for content
+- `css/styles.css` for styling
+- `js/main.js` for interactions
 
 ## Contact
 
-For questions or suggestions, please reach out through the contact form on the website. 
+- Email: alun.rees-lindley@outlook.com
+- Location: York, United Kingdom
+- LinkedIn: [@alun-rees](https://www.linkedin.com/in/alun-rees/)
+- GitHub: [@areeslindley](https://github.com/areeslindley)
+
+## License
+
+This project is open source and available under the MIT License. 
