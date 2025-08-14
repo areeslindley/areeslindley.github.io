@@ -3,15 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me | Alun Rees</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>About Me | Alun Rees - Data Scientist & Statistical Methodologist</title>
+    <meta name="description" content="Learn about Alun Rees, a Senior Statistical Methodologist at ONS specializing in time series analysis and seasonal adjustment.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E📊%3C/text%3E%3C/svg%3E">
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <nav class="navbar">
         <div class="nav-content">
-            <a href="index.html" class="nav-logo">Alun Rees</a>
+            <div class="logo">
+                <a href="index.html">AR</a>
+            </div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html" class="active">About</a></li>
@@ -20,68 +27,181 @@
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path class="sun" d="M12 18c-3.3 0-6-2.7-6-6s2.7-6 6-6 6 2.7 6 6-2.7 6-6 6zm0-10c-2.2 0-4 1.8-4 4s1.8 4 4 4 4-1.8 4-4-1.8-4-4-4z"/>
+                    <path class="sun" d="M12 2v2m0 16v2M4.22 4.22l1.42 1.42m12.72 12.72l1.42 1.42M2 12h2m16 0h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+                    <path class="moon" style="display: none;" d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                </svg>
+            </button>
+            <button class="mobile-menu-btn" aria-label="Toggle mobile menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </nav>
 
-    <main>
-        <section class="about-hero">
-            <div class="container">
-                <h1>About Me</h1>
-                <div class="about-grid">
-                    <div class="about-image">
-                        <img src="images/profile.jpg" alt="Alun Rees" class="profile-image">
-                    </div>
-                    <div class="about-content">
-                        <h2>Data Scientist | Statistical Methodologist | Developer</h2>
-                        <p class="about-bio">
-                            I currently work as a Senior Statistical Methodologist at the Office for National Statistics. I work on time series analysis and seasonal adjustment. I hold a PhD in Physics/Fusion energy.
-                        </p>
-                        <div class="location-info">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>York, United Kingdom</span>
-                        </div>
-                        <div class="social-links">
-                            <a href="https://github.com/areeslindley" target="_blank" class="social-link">
-                                <i class="fab fa-github"></i> GitHub
-                            </a>
-                            <a href="https://www.linkedin.com/in/alun-rees/" target="_blank" class="social-link">
-                                <i class="fab fa-linkedin"></i> LinkedIn
-                            </a>
-                        </div>
-                    </div>
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section style="padding: 8rem 2rem 4rem; background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%); position: relative; overflow: hidden;">
+            <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.3) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(255, 119, 48, 0.3) 0%, transparent 50%); pointer-events: none;"></div>
+            <div class="container" style="position: relative; z-index: 2;">
+                <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                    <h1 class="fade-in" style="font-size: clamp(2.5rem, 6vw, 4rem); background: var(--background-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 1.5rem;">About Me</h1>
+                    <p class="fade-in" style="font-size: 1.2rem; color: var(--text-light); max-width: 600px; margin: 0 auto;">Data Scientist and Statistical Methodologist transforming complex data into meaningful insights</p>
                 </div>
             </div>
         </section>
 
-        <section class="skills-section">
+        <!-- Main Content -->
+        <section style="padding: 4rem 2rem;">
             <div class="container">
-                <h2>Technical Skills</h2>
-                <div class="skills-grid">
-                    <div class="skill-category">
-                        <h3>Programming</h3>
-                        <ul class="skills-list">
-                            <li>Python</li>
-                            <li>R</li>
-                            <li>SQL</li>
-                            <li>SAS</li>
-                            <li>JavaScript</li>
-                        </ul>
+                <div style="display: grid; grid-template-columns: 1fr 300px; gap: 4rem; align-items: start;">
+                    <!-- Main Content -->
+                    <div>
+                        <!-- Professional Summary -->
+                        <div class="slide-up" style="background: var(--background-color); padding: 2.5rem; border-radius: var(--border-radius-lg); box-shadow: var(--shadow-lg); margin-bottom: 3rem; border-top: 4px solid var(--accent-color);">
+                            <h2 style="color: var(--text-color); margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.5rem;">
+                                <span>🎯</span> Professional Summary
+                            </h2>
+                            <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1.5rem;">
+                                I currently work as a <strong>Senior Statistical Methodologist</strong> at the Office for National Statistics, where I specialize in time series analysis and seasonal adjustment of national statistics. My work involves developing and implementing advanced statistical methods to ensure the accuracy and reliability of critical economic indicators.
+                            </p>
+                            <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1.5rem;">
+                                Previously, I worked as a <strong>Senior Data Scientist</strong> at the Government Office for Science, providing global insights on science and technology trends. I hold a <strong>PhD in Physics</strong> from the University of Warwick, specializing in Inertial Confinement Fusion and Computational Plasma Physics.
+                            </p>
+                            <p style="color: var(--text-light); line-height: 1.8;">
+                                My expertise spans statistical modeling, machine learning, and computational physics, with a particular focus on time series analysis, seasonal adjustment techniques, and the development of innovative data science solutions for government and research applications.
+                            </p>
+                        </div>
+
+                        <!-- Skills Grid -->
+                        <div class="slide-up" style="margin-bottom: 3rem;">
+                            <h2 style="color: var(--text-color); margin-bottom: 2rem; display: flex; align-items: center; gap: 0.5rem;">
+                                <span>🚀</span> Technical Skills
+                            </h2>
+                            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+                                <!-- Programming Languages -->
+                                <div style="background: var(--background-color); padding: 2rem; border-radius: var(--border-radius-lg); box-shadow: var(--shadow-md); border-left: 4px solid var(--accent-color);">
+                                    <h3 style="color: var(--accent-color); margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.5rem;">
+                                        <span>💻</span> Programming
+                                    </h3>
+                                    <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                                        <span style="padding: 0.4rem 0.8rem; background: rgba(49, 130, 206, 0.1); color: var(--accent-color); border-radius: 20px; font-size: 0.9rem; border: 1px solid rgba(49, 130, 206, 0.2);">Python</span>
+                                        <span style="padding: 0.4rem 0.8rem; background: rgba(49, 130, 206, 0.1); color: var(--accent-color); border-radius: 20px; font-size: 0.9rem; border: 1px solid rgba(49, 130, 206, 0.2);">R</span>
+                                        <span style="padding: 0.4rem 0.8rem; background: rgba(49, 130, 206, 0.1); color: var(--accent-color); border-radius: 20px; font-size: 0.9rem; border: 1px solid rgba(49, 130, 206, 0.2);">SQL</span>
+                                        <span style="padding: 0.4rem 0.8rem; background: rgba(49, 130, 206, 0.1); color: var(--accent-color); border-radius: 20px; font-size: 0.9rem; border: 1px solid rgba(49, 130, 206, 0.2);">SAS</span>
+                                        <span style="padding: 0.4rem 0.8rem; background: rgba(49, 130, 206, 0.1); color: var(--accent-color); border-radius: 20px; font-size: 0.9rem; border: 1px solid rgba(49, 130, 206, 0.2);">JavaScript</span>
+                                        <span style="padding: 0.4rem 0.8rem; background: rgba(49, 130, 206, 0.1); color: var(--accent-color); border-radius: 20px; font-size: 0.9rem; border: 1px solid rgba(49, 130, 206, 0.2);">Java</span>
+                                    </div>
+                                </div>
+
+                                <!-- Data Science -->
+                                <div style="background: var(--background-color); padding: 2rem; border-radius: var(--border-radius-lg); box-shadow: var(--shadow-md); border-left: 4px solid var(--accent-color);">
+                                    <h3 style="color: var(--accent-color); margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.5rem;">
+                                        <span>📊</span> Data Science
+                                    </h3>
+                                    <ul style="list-style: none; padding: 0;">
+                                        <li style="padding: 0.3rem 0; color: var(--text-light);">• Time Series Analysis</li>
+                                        <li style="padding: 0.3rem 0; color: var(--text-light);">• Seasonal Adjustment</li>
+                                        <li style="padding: 0.3rem 0; color: var(--text-light);">• Machine Learning</li>
+                                        <li style="padding: 0.3rem 0; color: var(--text-light);">• Statistical Modeling</li>
+                                        <li style="padding: 0.3rem 0; color: var(--text-light);">• Predictive Analytics</li>
+                                    </ul>
+                                </div>
+
+                                <!-- Specialized Tools -->
+                                <div style="background: var(--background-color); padding: 2rem; border-radius: var(--border-radius-lg); box-shadow: var(--shadow-md); border-left: 4px solid var(--accent-color);">
+                                    <h3 style="color: var(--accent-color); margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.5rem;">
+                                        <span>🔧</span> Specialized Tools
+                                    </h3>
+                                    <ul style="list-style: none; padding: 0;">
+                                        <li style="padding: 0.3rem 0; color: var(--text-light);">• ARIMA Modeling</li>
+                                        <li style="padding: 0.3rem 0; color: var(--text-light);">• X13-ARIMA-SEATS</li>
+                                        <li style="padding: 0.3rem 0; color: var(--text-light);">• Monte Carlo Simulations</li>
+                                        <li style="padding: 0.3rem 0; color: var(--text-light);">• NLP</li>
+                                        <li style="padding: 0.3rem 0; color: var(--text-light);">• Clustering Analysis</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Achievements -->
+                        <div class="slide-up" style="background: var(--background-secondary); padding: 2.5rem; border-radius: var(--border-radius-lg);">
+                            <h2 style="color: var(--text-color); margin-bottom: 2rem; display: flex; align-items: center; gap: 0.5rem;">
+                                <span>🏆</span> Professional Achievements
+                            </h2>
+                            <div style="display: grid; gap: 1.5rem;">
+                                <div style="display: flex; align-items: flex-start; gap: 1rem;">
+                                    <div style="background: var(--accent-color); color: white; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">3rd</div>
+                                    <div>
+                                        <h4 style="color: var(--text-color); margin-bottom: 0.5rem;">No10 Data Science Hackathon</h4>
+                                        <p style="color: var(--text-light); margin: 0;">3rd place at Imperial College London (April 2024)</p>
+                                    </div>
+                                </div>
+                                <div style="display: flex; align-items: flex-start; gap: 1rem;">
+                                    <div style="background: var(--accent-color); color: white; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">🌍</div>
+                                    <div>
+                                        <h4 style="color: var(--text-color); margin-bottom: 0.5rem;">International Research</h4>
+                                        <p style="color: var(--text-light); margin: 0;">Provided evidence supporting UK's participation in Horizon group</p>
+                                    </div>
+                                </div>
+                                <div style="display: flex; align-items: flex-start; gap: 1rem;">
+                                    <div style="background: var(--accent-color); color: white; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">📈</div>
+                                    <div>
+                                        <h4 style="color: var(--text-color); margin-bottom: 0.5rem;">ONS Showcase</h4>
+                                        <p style="color: var(--text-light); margin: 0;">Presented pyGrams at ONS' Data Science Community Showcase</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="skill-category">
-                        <h3>Data Science</h3>
-                        <ul class="skills-list">
-                            <li>Git</li>
-                            <li>Forecasting</li>
-                            <li>Backcasting</li>
-                            <li>Machine Learning</li>
-                            <li>NLP</li>
-                            <li>Clustering</li>
-                            <li>ARIMA</li>
-                            <li>X13-ARIMA-SEATS</li>
-                            <li>Statistical Analysis</li>
-                            <li>Monte Carlo Simulations</li>
-                            <li>Predictive Analytics</li>
-                        </ul>
+
+                    <!-- Sidebar -->
+                    <div>
+                        <!-- Profile Image -->
+                        <div class="slide-up" style="background: var(--background-color); padding: 2rem; border-radius: var(--border-radius-lg); box-shadow: var(--shadow-md); text-align: center; margin-bottom: 2rem;">
+                            <div style="width: 200px; height: 200px; border-radius: 50%; background: var(--background-gradient); margin: 0 auto 1.5rem; display: flex; align-items: center; justify-content: center; color: white; font-size: 4rem; font-weight: bold;">AR</div>
+                            <h3 style="color: var(--text-color); margin-bottom: 0.5rem;">Alun Rees</h3>
+                            <p style="color: var(--text-light); margin-bottom: 1.5rem;">Data Scientist & Statistical Methodologist</p>
+                            <div style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; color: var(--text-light); margin-bottom: 1.5rem;">
+                                <span>📍</span> York, United Kingdom
+                            </div>
+                            <div style="display: flex; gap: 0.5rem; justify-content: center;">
+                                <a href="https://github.com/areeslindley" target="_blank" rel="noopener" class="btn secondary" style="padding: 0.5rem;">GitHub</a>
+                                <a href="https://www.linkedin.com/in/alun-rees/" target="_blank" rel="noopener" class="btn primary" style="padding: 0.5rem;">LinkedIn</a>
+                            </div>
+                        </div>
+
+                        <!-- Education -->
+                        <div class="slide-up" style="background: var(--background-color); padding: 2rem; border-radius: var(--border-radius-lg); box-shadow: var(--shadow-md); margin-bottom: 2rem;">
+                            <h3 style="color: var(--text-color); margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.5rem;">
+                                <span>🎓</span> Education
+                            </h3>
+                            <div style="border-left: 2px solid var(--accent-color); padding-left: 1rem;">
+                                <h4 style="color: var(--text-color); margin-bottom: 0.5rem;">PhD in Physics</h4>
+                                <p style="color: var(--accent-color); font-weight: 500; margin-bottom: 0.5rem;">University of Warwick</p>
+                                <p style="color: var(--text-light); font-size: 0.9rem; margin: 0;">Specialization: Inertial Confinement Fusion & Computational Plasma Physics</p>
+                            </div>
+                        </div>
+
+                        <!-- Quick Stats -->
+                        <div class="slide-up" style="background: var(--background-color); padding: 2rem; border-radius: var(--border-radius-lg); box-shadow: var(--shadow-md);">
+                            <h3 style="color: var(--text-color); margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.5rem;">
+                                <span>📊</span> Quick Stats
+                            </h3>
+                            <div style="display: grid; gap: 1rem;">
+                                <div style="text-align: center; padding: 1rem; background: var(--background-secondary); border-radius: var(--border-radius);">
+                                    <div style="font-size: 2rem; font-weight: bold; background: var(--background-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">10+</div>
+                                    <div style="font-size: 0.9rem; color: var(--text-light);">Years Experience</div>
+                                </div>
+                                <div style="text-align: center; padding: 1rem; background: var(--background-secondary); border-radius: var(--border-radius);">
+                                    <div style="font-size: 2rem; font-weight: bold; background: var(--background-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">50+</div>
+                                    <div style="font-size: 0.9rem; color: var(--text-light);">Projects</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -89,31 +209,35 @@
     </main>
 
     <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-info">
-                    <h3>Alun Rees</h3>
-                    <p>Data Scientist | Statistical Methodologist | Developer</p>
-                </div>
-                <div class="footer-links">
-                    <a href="https://github.com/areeslindley" target="_blank">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/alun-rees/" target="_blank">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="mailto:alun.rees-lindley@outlook.com">
-                        <i class="fas fa-envelope"></i>
-                    </a>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Alun Rees</h3>
+                <p>Data Scientist & Statistical Methodologist</p>
+                <p>Transforming data into insights at the Office for National Statistics</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                    <a href="about.html" style="color: rgba(255, 255, 255, 0.8);">About</a>
+                    <a href="projects.html" style="color: rgba(255, 255, 255, 0.8);">Projects</a>
+                    <a href="career.html" style="color: rgba(255, 255, 255, 0.8);">Career</a>
+                    <a href="contact.html" style="color: rgba(255, 255, 255, 0.8);">Contact</a>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Alun Rees. All rights reserved.</p>
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <div class="social-links">
+                    <a href="https://github.com/areeslindley" target="_blank" rel="noopener">GitHub</a>
+                    <a href="https://www.linkedin.com/in/alun-rees/" target="_blank" rel="noopener">LinkedIn</a>
+                    <a href="mailto:alun.rees-lindley@outlook.com">Email</a>
+                </div>
             </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Alun Rees. All rights reserved.</p>
         </div>
     </footer>
 
-    <script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
 </body>
 </html> 
