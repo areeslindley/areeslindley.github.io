@@ -77,6 +77,16 @@ body {
     display: inline-block !important;
 }
 
+/* Profile image styling */
+.profile-image {
+    width: 400px !important;
+    height: 400px !important;
+    object-fit: cover !important;
+    border-radius: 12px !important;
+    border: 3px solid var(--accent-color) !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+}
+
 
 .mobile-menu-btn {
     display: none;
