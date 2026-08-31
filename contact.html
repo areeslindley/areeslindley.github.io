@@ -4,19 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | Alun Rees</title>
-    
-    <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
     <link rel="manifest" href="images/favicon/site.webmanifest">
     <link rel="shortcut icon" href="images/favicon/favicon.ico">
-    <link rel="stylesheet" href="css/styles.css?v=2">
-    <link rel="stylesheet" href="css/visualizations.css?v=2">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
-    <!-- Data Visualization Libraries -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/visualizations.css">
 </head>
 <body>
     <nav class="navbar">
@@ -32,7 +28,7 @@
                 <a href="blog.html">Blog</a>
                 <a href="contact.html" class="active">Contact</a>
             </div>
-            <button class="mobile-menu-btn">
+            <button class="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -84,12 +80,12 @@
                         <div class="info-card">
                             <i class="fab fa-linkedin"></i>
                             <h4>LinkedIn</h4>
-                            <p><a href="https://www.linkedin.com/in/alun-rees/" target="_blank">@alun-rees</a></p>
+                            <p><a href="https://www.linkedin.com/in/alun-rees/" target="_blank" rel="noopener">@alun-rees</a></p>
                         </div>
                         <div class="info-card">
                             <i class="fab fa-github"></i>
                             <h4>GitHub</h4>
-                            <p><a href="https://github.com/areeslindley" target="_blank">@areeslindley</a></p>
+                            <p><a href="https://github.com/areeslindley" target="_blank" rel="noopener">@areeslindley</a></p>
                         </div>
                     </div>
                 </div>
@@ -98,27 +94,30 @@
     </main>
 
     <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Alun Rees</h3>
-                <p>Data Scientist & Developer</p>
-            </div>
-            <div class="footer-section">
-                <h4>Connect</h4>
-                <div class="social-links">
-                    <a href="https://github.com/yourusername" target="_blank">GitHub</a>
-                    <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
-                    <a href="mailto:your.email@example.com">Email</a>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Alun Rees</h3>
+                    <p>Data Scientist | Statistical Methodologist | Developer</p>
+                </div>
+                <div class="footer-links">
+                    <a href="https://github.com/areeslindley" target="_blank" rel="noopener" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/alun-rees/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:alun.rees-lindley@outlook.com" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
                 </div>
             </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 Alun Rees. All rights reserved.</p>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Alun Rees. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 
-    <script src="js/data.js?v=2"></script>
-    <script src="js/visualizations.js?v=2"></script>
-    <script src="js/main.js?v=2"></script>
+    <script src="js/main.js"></script>
 </body>
-</html> 
+</html>

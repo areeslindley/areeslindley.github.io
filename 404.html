@@ -3,36 +3,20 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Redirecting to CineGraph</title>
-<link rel="canonical" href="https://areeslindley.github.io/CineGraph/">
-<script>
-  if (/^\/obsidian-network(\/|$)/.test(location.pathname)) {
-    var dest =
-      "https://areeslindley.github.io/CineGraph" +
-      location.pathname.replace(/^\/obsidian-network\/?/, "/") +
-      location.search +
-      location.hash;
-    location.replace(dest);
-  } else {
-    document.title = "Page not found";
-    var canon = document.querySelector('link[rel="canonical"]');
-    if (canon) canon.parentNode.removeChild(canon);
+<title>Page not found</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    margin: 0;
+    font: 16px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif;
+    max-width: 40rem;
+    padding: 3rem 1.5rem;
   }
-</script>
+  a { color: #0969da; }
+</style>
 </head>
 <body>
-<noscript>
-  <p>Moved to <a href="https://areeslindley.github.io/CineGraph/">CineGraph</a> if you followed an old obsidian-network link.</p>
-</noscript>
-<main id="not-found" hidden>
   <h1>Page not found</h1>
-  <p>Nothing lives at this address. Try <a href="/">the homepage</a> or <a href="https://areeslindley.github.io/CineGraph/">CineGraph</a>.</p>
-</main>
-<script>
-  if (!/^\/obsidian-network(\/|$)/.test(location.pathname)) {
-    var el = document.getElementById("not-found");
-    if (el) el.hidden = false;
-  }
-</script>
+  <p>Nothing lives at this address. Try <a href="/">the homepage</a>.</p>
 </body>
 </html>

@@ -66,8 +66,8 @@ The website consists of several key sections:
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/alun-website.git
-cd alun-website
+git clone https://github.com/areeslindley/areeslindley.github.io.git
+cd areeslindley.github.io
 ```
 
 2. Open `index.html` in your browser to view the site locally
