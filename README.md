@@ -83,7 +83,7 @@ cd areeslindley.github.io
 ## Contact
 
 - Email: alun.rees-lindley@outlook.com
-- Location: York, United Kingdom
+- Location: Greater Leeds, United Kingdom
 - LinkedIn: [@alun-rees-lindley](https://www.linkedin.com/in/alun-rees-lindley/)
 - GitHub: [@areeslindley](https://github.com/areeslindley)
 
