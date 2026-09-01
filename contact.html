@@ -3,7 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | Alun Rees</title>
+    <title>Contact | Alun Rees-Lindley</title>
+    <meta name="description" content="Contact Alun Rees-Lindley — email, LinkedIn, and GitHub.">
+    <link rel="canonical" href="https://areeslindley.github.io/contact.html">
+    <meta property="og:title" content="Contact | Alun Rees-Lindley">
+    <meta property="og:description" content="Contact Alun Rees-Lindley — email, LinkedIn, and GitHub.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://areeslindley.github.io/contact.html">
+    <meta property="og:image" content="https://areeslindley.github.io/images/og-preview.png">
+    <meta name="twitter:card" content="summary_large_image">
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
@@ -15,16 +23,18 @@
     <link rel="stylesheet" href="css/visualizations.css">
 </head>
 <body>
+    <a class="skip-link" href="#main">Skip to content</a>
     <nav class="navbar">
         <div class="nav-content">
             <div class="logo">
-                <a href="index.html">AR</a>
+                <a href="index.html">ARL</a>
             </div>
             <div class="nav-links">
                 <a href="index.html">Home</a>
                 <a href="about.html">About</a>
                 <a href="https://areeslindley.github.io/projects-website/intro.html">Projects</a>
                 <a href="https://areeslindley.github.io/CineGraph/index.html">CineGraph</a>
+                <a href="https://areeslindley.github.io/SonoGraph/index.html">SonoGraph</a>
                 <a href="career.html">Career</a>
                 <a href="blog.html">Blog</a>
                 <a href="contact.html" class="active">Contact</a>
@@ -37,56 +47,36 @@
         </div>
     </nav>
 
-    <main>
+    <main id="main">
         <section class="contact-hero">
             <div class="contact-content">
                 <h1>Get in Touch</h1>
-                <p class="contact-intro">I'm always interested in hearing about new projects and opportunities.</p>
+                <p class="contact-intro">I'm always interested in hearing about new projects and opportunities. The most reliable routes are email or LinkedIn.</p>
 
-                <div class="contact-grid">
-                    <div class="contact-form-container">
-                        <form class="contact-form" id="contactForm">
-                            <div class="form-group">
-                                <label for="name">Name</label>
-                                <input type="text" id="name" name="name" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="email" id="email" name="email" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="subject">Subject</label>
-                                <input type="text" id="subject" name="subject" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="message">Message</label>
-                                <textarea id="message" name="message" rows="5" required></textarea>
-                            </div>
-                            <button type="submit" class="btn primary">Send Message</button>
-                        </form>
-                    </div>
-
+                <div class="contact-grid contact-only">
                     <div class="contact-info">
-                        <h3>Contact Information</h3>
-                        <div class="info-card">
-                            <i class="fas fa-envelope"></i>
-                            <h4>Email</h4>
-                            <p><a href="mailto:alun.rees-lindley@outlook.com">alun.rees-lindley@outlook.com</a></p>
-                        </div>
-                        <div class="info-card">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <h4>Location</h4>
-                            <p>York, United Kingdom</p>
-                        </div>
-                        <div class="info-card">
-                            <i class="fab fa-linkedin"></i>
-                            <h4>LinkedIn</h4>
-                            <p><a href="https://www.linkedin.com/in/alun-rees/" target="_blank" rel="noopener">@alun-rees</a></p>
-                        </div>
-                        <div class="info-card">
-                            <i class="fab fa-github"></i>
-                            <h4>GitHub</h4>
-                            <p><a href="https://github.com/areeslindley" target="_blank" rel="noopener">@areeslindley</a></p>
+                        <h2>Contact information</h2>
+                        <div class="contact-info-grid">
+                            <div class="info-card">
+                                <i class="fas fa-envelope" aria-hidden="true"></i>
+                                <h3>Email</h3>
+                                <p><a href="mailto:alun.rees-lindley@outlook.com">alun.rees-lindley@outlook.com</a></p>
+                            </div>
+                            <div class="info-card">
+                                <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                                <h3>Location</h3>
+                                <p>York, United Kingdom</p>
+                            </div>
+                            <div class="info-card">
+                                <i class="fab fa-linkedin" aria-hidden="true"></i>
+                                <h3>LinkedIn</h3>
+                                <p><a href="https://www.linkedin.com/in/alun-rees-lindley/" target="_blank" rel="noopener">@alun-rees-lindley</a></p>
+                            </div>
+                            <div class="info-card">
+                                <i class="fab fa-github" aria-hidden="true"></i>
+                                <h3>GitHub</h3>
+                                <p><a href="https://github.com/areeslindley" target="_blank" rel="noopener">@areeslindley</a></p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -98,14 +88,14 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-info">
-                    <h3>Alun Rees</h3>
+                    <p class="footer-name">Alun Rees-Lindley</p>
                     <p>Data Scientist | Statistical Methodologist | Developer</p>
                 </div>
                 <div class="footer-links">
                     <a href="https://github.com/areeslindley" target="_blank" rel="noopener" aria-label="GitHub">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/alun-rees/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                    <a href="https://www.linkedin.com/in/alun-rees-lindley/" target="_blank" rel="noopener" aria-label="LinkedIn">
                         <i class="fab fa-linkedin"></i>
                     </a>
                     <a href="mailto:alun.rees-lindley@outlook.com" aria-label="Email">
@@ -114,7 +104,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Alun Rees. All rights reserved.</p>
+                <p>&copy; 2026 Alun Rees-Lindley. All rights reserved.</p>
             </div>
         </div>
     </footer>

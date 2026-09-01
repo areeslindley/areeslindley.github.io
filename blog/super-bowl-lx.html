@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predicting Super Bowl LX | Alun Rees-Lindley</title>
+    <meta name="description" content="A locked pre-game Elo and historical-simulation model for Super Bowl LX: Seahawks vs Patriots.">
+    <link rel="canonical" href="https://areeslindley.github.io/blog/super-bowl-lx.html">
+    <meta property="og:title" content="Predicting Super Bowl LX | Alun Rees-Lindley">
+    <meta property="og:description" content="A locked pre-game Elo and historical-simulation model for Super Bowl LX: Seahawks vs Patriots.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://areeslindley.github.io/blog/super-bowl-lx.html">
+    <meta property="og:image" content="https://areeslindley.github.io/images/og-preview.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../images/favicon/site.webmanifest">
+    <link rel="shortcut icon" href="../images/favicon/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <a href="../index.html">ARL</a>
+            </div>
+            <div class="nav-links">
+                <a href="../index.html">Home</a>
+                <a href="../about.html">About</a>
+                <a href="https://areeslindley.github.io/projects-website/intro.html">Projects</a>
+                <a href="https://areeslindley.github.io/CineGraph/index.html">CineGraph</a>
+                <a href="https://areeslindley.github.io/SonoGraph/index.html">SonoGraph</a>
+                <a href="../career.html">Career</a>
+                <a href="../blog.html" class="active">Blog</a>
+                <a href="../contact.html">Contact</a>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main id="main">
+        <header class="article-hero">
+            <div class="container">
+                <h1>Predicting Super Bowl LX</h1>
+                <p class="article-meta">Sports analytics · locked 7 February 2026, before kick-off</p>
+            </div>
+        </header>
+        <article class="article-body">
+            <p>
+                Super Bowl LX matched the Seattle Seahawks and the New England Patriots in New Orleans on 8 February 2026. A lot of pre-game talk treated it as a coin flip between two elite sides. I ran two models on the 2025 season — a FiveThirtyEight-style Elo, and a historical simulation — and locked the numbers the day before the game.
+            </p>
+            <p>
+                They did not say coin flip. Seattle went in with a 72.7-point Elo advantage, which translated to about a <strong>60.3% win probability</strong>. That is a real edge, and still plenty of room to be wrong in a one-game sample.
+            </p>
+            <p>
+                The full Quarto article is the piece to read: model specification, Elo paths through the season, score simulation, and the usual caveats about forecasting a single match. Code and locked prediction files are in the same repository.
+            </p>
+            <p>
+                <a href="https://github.com/areeslindley/nfl-elo-model/blob/main/Superbowl-pregame-analysis.qmd" target="_blank" rel="noopener" class="btn primary">Open the Quarto article on GitHub</a>
+                <a href="https://github.com/areeslindley/nfl-elo-model" target="_blank" rel="noopener" class="btn secondary">Repository</a>
+            </p>
+            <p><a href="../blog.html">← Back to the blog</a></p>
+        </article>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p class="footer-name">Alun Rees-Lindley</p>
+                    <p>Data Scientist | Statistical Methodologist | Developer</p>
+                </div>
+                <div class="footer-links">
+                    <a href="https://github.com/areeslindley" target="_blank" rel="noopener" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/alun-rees-lindley/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:alun.rees-lindley@outlook.com" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Alun Rees-Lindley. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

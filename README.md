@@ -1,18 +1,21 @@
-# Alun Rees - Personal Portfolio
+# Alun Rees-Lindley - Personal Portfolio
 
 Welcome to my personal portfolio website! I'm a Data Scientist and Statistical Methodologist with expertise in time series analysis, seasonal adjustment, and computational physics.
 
 ## About Me
 
-I currently work as a Senior Statistical Methodologist at the Office for National Statistics, where I focus on time series analysis and seasonal adjustment of national statistics. Previously, I worked as a Senior Data Scientist at the Government Office for Science, providing global insights on science and technology. I hold a PhD in Physics from the University of Warwick, specializing in Inertial Confinement Fusion and Computational Plasma Physics.
+I currently work as a Senior Statistical Methodologist (SEO) at the Office for National Statistics, where I focus on time series analysis and seasonal adjustment of national statistics. Previously, I worked as a Senior Data Scientist at the Government Office for Science. I hold a PhD in Physics (Fusion Energy — Computational) from the University of Warwick, an MSc in Fusion Energy from the University of York (2018), and an MPhys in Physics from Durham University.
 
 ## Featured Projects
 
-### UK House Prices
-A web application for searching and visualizing UK house price data, providing an intuitive interface for exploring property market trends.
-- **Technologies**: Java, Python, HTML
-- **Live Demo**: [View on Replit](https://replit.com/@arees05/UkHousePrices)
-- **GitHub**: [View Repository](https://github.com/areeslindley/UkHousePrices)
+### Small Area Estimation for UK Local Authorities
+Fay–Herriot EBLUP and a Bayesian hierarchical model for APS unemployment rates, validated against ONS published model-based estimates.
+- **Write-up**: [Portfolio](https://areeslindley.github.io/projects-website/projects/small-area-estimation/)
+
+### CineGraph and SonoGraph
+Interactive knowledge graphs of film and music, generated as Obsidian vaults and standalone graphs.
+- **CineGraph**: [areeslindley.github.io/CineGraph](https://areeslindley.github.io/CineGraph/)
+- **SonoGraph**: [areeslindley.github.io/SonoGraph](https://areeslindley.github.io/SonoGraph/)
 
 ### Rugby Analytics
 A comprehensive analytics system for rugby data analysis and prediction, featuring historical fixture analysis and match outcome predictions.
@@ -81,7 +84,7 @@ cd areeslindley.github.io
 
 - Email: alun.rees-lindley@outlook.com
 - Location: York, United Kingdom
-- LinkedIn: [@alun-rees](https://www.linkedin.com/in/alun-rees/)
+- LinkedIn: [@alun-rees-lindley](https://www.linkedin.com/in/alun-rees-lindley/)
 - GitHub: [@areeslindley](https://github.com/areeslindley)
 
 ## License

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Residual seasonality in GDP | Alun Rees-Lindley</title>
+    <meta name="description" content="A public-facing note on residual seasonality in published GDP — why it matters, and how it is tested.">
+    <link rel="canonical" href="https://areeslindley.github.io/blog/residual-seasonality.html">
+    <meta property="og:title" content="Residual seasonality in GDP | Alun Rees-Lindley">
+    <meta property="og:description" content="A public-facing note on residual seasonality in published GDP — why it matters, and how it is tested.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://areeslindley.github.io/blog/residual-seasonality.html">
+    <meta property="og:image" content="https://areeslindley.github.io/images/og-preview.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../images/favicon/site.webmanifest">
+    <link rel="shortcut icon" href="../images/favicon/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <a href="../index.html">ARL</a>
+            </div>
+            <div class="nav-links">
+                <a href="../index.html">Home</a>
+                <a href="../about.html">About</a>
+                <a href="https://areeslindley.github.io/projects-website/intro.html">Projects</a>
+                <a href="https://areeslindley.github.io/CineGraph/index.html">CineGraph</a>
+                <a href="https://areeslindley.github.io/SonoGraph/index.html">SonoGraph</a>
+                <a href="../career.html">Career</a>
+                <a href="../blog.html" class="active">Blog</a>
+                <a href="../contact.html">Contact</a>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main id="main">
+        <header class="article-hero">
+            <div class="container">
+                <h1>Residual seasonality in GDP, in public</h1>
+                <p class="article-meta">Methodology · personal note, not an official ONS publication</p>
+            </div>
+        </header>
+        <article class="article-body">
+            <p>
+                Seasonal adjustment exists so that a quarter-on-quarter GDP movement is not just “it was Christmas” or “it was August”. Once a series has been adjusted, users treat it as seasonally clean. Residual seasonality is what happens when that assumption is a bit too optimistic: a repeating calendar pattern is still sitting in the published, seasonally adjusted numbers.
+            </p>
+            <p>
+                For GDP this is not a specialist curiosity. Markets, the Bank of England, and fiscal commentators read seasonally adjusted growth as the live signal. If a residual seasonal pattern is large enough to see, it can be mistaken for a genuine acceleration or slowdown. That is why residual-seasonality checks sit next to production, not in a methods annex that nobody opens.
+            </p>
+
+            <h2>What we are looking for</h2>
+            <p>
+                After X-13ARIMA-SEATS (or an equivalent) has done its work, the seasonally adjusted series should not still prefer one quarter or month. In practice you look at a small battery of tests rather than a single p-value:
+            </p>
+            <ul>
+                <li>non-parametric seasonality tests on the adjusted series (Friedman, Kruskal–Wallis);</li>
+                <li>combined seasonality diagnostics from the seasonal-adjustment software;</li>
+                <li>plots of quarter or month effects, and of year-on-year vs quarter-on-quarter paths, which often show a problem before a test does.</li>
+            </ul>
+            <p>
+                A non-significant test is not a certificate of cleanliness. Short samples, moving seasonality, and calendar effects (Easter, trading days, leap years) can hide or mimic residual seasonality. The judgement is whether any leftover pattern is large enough to change the story a user would tell about growth.
+            </p>
+
+            <h2>Why GDP is a hard case</h2>
+            <p>
+                GDP is an aggregate of many series, some already adjusted, some not, some with short histories or structural breaks. Residual seasonality can be inherited from a noisy component, created by aggregation, or introduced when you chain, deflate, or benchmark. Checking only the headline total is necessary and not sufficient.
+            </p>
+            <p>
+                The practical production question is then: if you find something, do you change the specification of a component, add a calendar regressor, or leave the headline alone because the effect is within the noise of a revision? That is methodology as risk management, not as a textbook exercise.
+            </p>
+
+            <h2>What this note is, and is not</h2>
+            <p>
+                This is a shortened, public-facing account of work I have done on residual seasonality in GDP. A fuller internal methodology paper was well received by the Bank of England; that paper is not reproduced here. Nothing on this page should be read as an official ONS position.
+            </p>
+            <p>
+                For the official public description of how ONS currently assesses residual seasonality in published outputs, see
+                <a href="https://www.ons.gov.uk/economy/grossdomesticproductgdp/methodologies/assessingresidualseasonalityinpublishedoutputs" target="_blank" rel="noopener">Assessing residual seasonality in published outputs</a>.
+            </p>
+            <p><a href="../blog.html">← Back to the blog</a></p>
+        </article>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p class="footer-name">Alun Rees-Lindley</p>
+                    <p>Data Scientist | Statistical Methodologist | Developer</p>
+                </div>
+                <div class="footer-links">
+                    <a href="https://github.com/areeslindley" target="_blank" rel="noopener" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/alun-rees-lindley/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:alun.rees-lindley@outlook.com" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Alun Rees-Lindley. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

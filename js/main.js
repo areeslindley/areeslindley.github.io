@@ -3,7 +3,6 @@ const App = {
         this.initNavigation();
         this.initScrollAnimations();
         this.initVisualizations();
-        this.initContactForm();
     },
 
     initNavigation() {
@@ -15,6 +14,23 @@ const App = {
                 const open = navLinks.classList.toggle('open');
                 mobileMenuBtn.classList.toggle('active', open);
                 mobileMenuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+            });
+
+            navLinks.querySelectorAll('a').forEach((link) => {
+                link.addEventListener('click', () => {
+                    navLinks.classList.remove('open');
+                    mobileMenuBtn.classList.remove('active');
+                    mobileMenuBtn.setAttribute('aria-expanded', 'false');
+                });
+            });
+
+            document.addEventListener('keydown', (event) => {
+                if (event.key === 'Escape' && navLinks.classList.contains('open')) {
+                    navLinks.classList.remove('open');
+                    mobileMenuBtn.classList.remove('active');
+                    mobileMenuBtn.setAttribute('aria-expanded', 'false');
+                    mobileMenuBtn.focus();
+                }
             });
         }
     },
@@ -41,21 +57,6 @@ const App = {
         if (typeof VisualizationManager !== 'undefined') {
             VisualizationManager.initAll();
         }
-    },
-
-    initContactForm() {
-        const form = document.getElementById('contactForm');
-        if (!form) return;
-
-        form.addEventListener('submit', (event) => {
-            event.preventDefault();
-            const name = form.name.value.trim();
-            const email = form.email.value.trim();
-            const subject = form.subject.value.trim();
-            const message = form.message.value.trim();
-            const body = `From: ${name} <${email}>\n\n${message}`;
-            window.location.href = `mailto:alun.rees-lindley@outlook.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-        });
     }
 };
 

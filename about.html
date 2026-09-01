@@ -3,7 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me | Alun Rees</title>
+    <title>About Me | Alun Rees-Lindley</title>
+    <meta name="description" content="Senior Statistical Methodologist (SEO) at ONS. PhD in computational physics, MSc Fusion Energy (York), MPhys Physics (Durham).">
+    <link rel="canonical" href="https://areeslindley.github.io/about.html">
+    <meta property="og:title" content="About Me | Alun Rees-Lindley">
+    <meta property="og:description" content="Senior Statistical Methodologist (SEO) at ONS. PhD in computational physics, MSc Fusion Energy (York), MPhys Physics (Durham).">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://areeslindley.github.io/about.html">
+    <meta property="og:image" content="https://areeslindley.github.io/images/og-preview.png">
+    <meta name="twitter:card" content="summary_large_image">
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
@@ -16,16 +24,18 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
+    <a class="skip-link" href="#main">Skip to content</a>
     <nav class="navbar">
         <div class="nav-content">
             <div class="logo">
-                <a href="index.html">AR</a>
+                <a href="index.html">ARL</a>
             </div>
             <div class="nav-links">
                 <a href="index.html">Home</a>
                 <a href="about.html" class="active">About</a>
                 <a href="https://areeslindley.github.io/projects-website/intro.html">Projects</a>
                 <a href="https://areeslindley.github.io/CineGraph/index.html">CineGraph</a>
+                <a href="https://areeslindley.github.io/SonoGraph/index.html">SonoGraph</a>
                 <a href="career.html">Career</a>
                 <a href="blog.html">Blog</a>
                 <a href="contact.html">Contact</a>
@@ -38,29 +48,29 @@
         </div>
     </nav>
 
-    <main>
+    <main id="main">
         <section class="about-hero">
             <div class="container">
                 <h1>About Me</h1>
                 <div class="about-grid">
                     <div class="about-image">
-                        <img src="images/profile.jpg" alt="Alun Rees" class="profile-image">
+                        <img src="images/profile.jpg" alt="Portrait of Alun Rees-Lindley, data scientist and statistical methodologist" class="profile-image" width="360" height="360">
                     </div>
                     <div class="about-copy">
-                        <h2>Data Scientist | Statistical Methodologist | Developer</h2>
+                        <p class="hero-role">Data Scientist | Statistical Methodologist | Developer</p>
                         <p class="about-bio">
-                            I currently work as a Senior Statistical Methodologist at the Office for National Statistics. I work on time series analysis and seasonal adjustment. I hold a PhD in Physics/Fusion energy.
+                            I currently work as a Senior Statistical Methodologist (SEO) at the Office for National Statistics, focusing on time series analysis and seasonal adjustment. I hold a PhD in Physics (Fusion Energy — Computational) from the University of Warwick.
                         </p>
                         <div class="location-info">
-                            <i class="fas fa-map-marker-alt"></i>
+                            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
                             <span>York, United Kingdom</span>
                         </div>
                         <div class="social-links">
                             <a href="https://github.com/areeslindley" target="_blank" rel="noopener" class="social-link">
-                                <i class="fab fa-github"></i> GitHub
+                                <i class="fab fa-github" aria-hidden="true"></i> GitHub
                             </a>
-                            <a href="https://www.linkedin.com/in/alun-rees/" target="_blank" rel="noopener" class="social-link">
-                                <i class="fab fa-linkedin"></i> LinkedIn
+                            <a href="https://www.linkedin.com/in/alun-rees-lindley/" target="_blank" rel="noopener" class="social-link">
+                                <i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn
                             </a>
                         </div>
                     </div>
@@ -68,11 +78,22 @@
             </div>
         </section>
 
+        <section class="qualifications">
+            <div class="container">
+                <h2>Education</h2>
+                <ul class="qualifications-list">
+                    <li><strong>PhD in Physics (Fusion Energy — Computational)</strong> — University of Warwick, 2022</li>
+                    <li><strong>MSc Fusion Energy</strong> — University of York, 2018 (First Class Honours)</li>
+                    <li><strong>MPhys Physics</strong> — Durham University, 2016 (Upper Second Class Honours)</li>
+                </ul>
+            </div>
+        </section>
+
         <section class="skills-section">
             <div class="container">
                 <h2>Technical Skills</h2>
                 <div class="skills-chart-container">
-                    <canvas id="skills-chart"></canvas>
+                    <canvas id="skills-chart" aria-label="Radar chart of technical skill proficiency"></canvas>
                 </div>
                 <div class="skills-grid">
                     <div class="skill-category">
@@ -88,17 +109,22 @@
                     <div class="skill-category">
                         <h3>Data Science</h3>
                         <ul class="skills-list">
-                            <li>Git</li>
-                            <li>Forecasting</li>
-                            <li>Backcasting</li>
-                            <li>Machine Learning</li>
+                            <li>Time series and seasonal adjustment</li>
+                            <li>Forecasting and backcasting</li>
+                            <li>Bayesian state-space models</li>
+                            <li>Machine learning</li>
                             <li>NLP</li>
-                            <li>Clustering</li>
-                            <li>ARIMA</li>
-                            <li>X13-ARIMA-SEATS</li>
-                            <li>Statistical Analysis</li>
-                            <li>Monte Carlo Simulations</li>
-                            <li>Predictive Analytics</li>
+                            <li>ARIMA / X13-ARIMA-SEATS</li>
+                            <li>BigQuery / Azure</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Applied AI</h3>
+                        <ul class="skills-list">
+                            <li>LangChain</li>
+                            <li>Claude API</li>
+                            <li>Retrieval-augmented generation</li>
+                            <li>Git</li>
                         </ul>
                     </div>
                 </div>
@@ -110,14 +136,14 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-info">
-                    <h3>Alun Rees</h3>
+                    <p class="footer-name">Alun Rees-Lindley</p>
                     <p>Data Scientist | Statistical Methodologist | Developer</p>
                 </div>
                 <div class="footer-links">
                     <a href="https://github.com/areeslindley" target="_blank" rel="noopener" aria-label="GitHub">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/alun-rees/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                    <a href="https://www.linkedin.com/in/alun-rees-lindley/" target="_blank" rel="noopener" aria-label="LinkedIn">
                         <i class="fab fa-linkedin"></i>
                     </a>
                     <a href="mailto:alun.rees-lindley@outlook.com" aria-label="Email">
@@ -126,7 +152,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Alun Rees. All rights reserved.</p>
+                <p>&copy; 2026 Alun Rees-Lindley. All rights reserved.</p>
             </div>
         </div>
     </footer>

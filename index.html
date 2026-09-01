@@ -3,7 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alun Rees | Data Scientist & Developer</title>
+    <title>Alun Rees-Lindley | Data Scientist &amp; Developer</title>
+    <meta name="description" content="Data scientist and statistical methodologist. Portfolio spanning official statistics, interactive knowledge graphs, and applied AI.">
+    <link rel="canonical" href="https://areeslindley.github.io/">
+    <meta property="og:title" content="Alun Rees-Lindley | Data Scientist &amp; Developer">
+    <meta property="og:description" content="Data scientist and statistical methodologist. Portfolio spanning official statistics, interactive knowledge graphs, and applied AI.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://areeslindley.github.io/">
+    <meta property="og:image" content="https://areeslindley.github.io/images/og-preview.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Alun Rees-Lindley | Data Scientist &amp; Developer">
+    <meta name="twitter:description" content="Data scientist and statistical methodologist. Portfolio spanning official statistics, interactive knowledge graphs, and applied AI.">
+    <meta name="twitter:image" content="https://areeslindley.github.io/images/og-preview.png">
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
@@ -15,16 +26,18 @@
     <link rel="stylesheet" href="css/visualizations.css">
 </head>
 <body>
+    <a class="skip-link" href="#main">Skip to content</a>
     <nav class="navbar">
         <div class="nav-content">
             <div class="logo">
-                <a href="index.html">AR</a>
+                <a href="index.html">ARL</a>
             </div>
             <div class="nav-links">
                 <a href="index.html" class="active">Home</a>
                 <a href="about.html">About</a>
                 <a href="https://areeslindley.github.io/projects-website/intro.html">Projects</a>
                 <a href="https://areeslindley.github.io/CineGraph/index.html">CineGraph</a>
+                <a href="https://areeslindley.github.io/SonoGraph/index.html">SonoGraph</a>
                 <a href="career.html">Career</a>
                 <a href="blog.html">Blog</a>
                 <a href="contact.html">Contact</a>
@@ -37,33 +50,79 @@
         </div>
     </nav>
 
-    <main>
+    <main id="main">
         <section class="hero">
             <div class="hero-content">
-                <h1>Alun Rees</h1>
-                <h2>Data Scientist | Statistical Methodologist | Developer</h2>
+                <h1>Alun Rees-Lindley</h1>
+                <p class="hero-role">Data Scientist | Statistical Methodologist | Developer</p>
                 <p>Transforming complex data into meaningful insights through statistical analysis and innovative solutions.</p>
                 <div class="hero-cta">
                     <a href="https://areeslindley.github.io/projects-website/intro.html" class="btn primary">View My Work</a>
+                    <a href="files/Alun_Rees_CV.pdf" class="btn secondary" download>Download CV</a>
                     <a href="contact.html" class="btn secondary">Get in Touch</a>
                 </div>
             </div>
         </section>
 
         <section class="featured-project">
-            <h2>Featured Project</h2>
-            <div class="project-card">
-                <h3>UK House Prices</h3>
-                <p>A web application for searching and visualizing UK house price data, providing an intuitive interface for exploring property market trends.</p>
-                <div class="project-tags">
-                    <span>Java</span>
-                    <span>Python</span>
-                    <span>HTML</span>
-                </div>
-                <div class="project-links">
-                    <a href="https://github.com/areeslindley/UkHousePrices" target="_blank" rel="noopener" class="btn secondary">View on GitHub</a>
-                    <a href="https://replit.com/@arees05/UkHousePrices" target="_blank" rel="noopener" class="btn primary">Live Demo</a>
-                </div>
+            <h2>Featured work</h2>
+            <p class="featured-intro">A sample of current projects: official-statistics modelling, interactive knowledge graphs, and applied AI.</p>
+            <div class="featured-grid">
+                <article class="project-card">
+                    <h3>Small Area Estimation for UK Local Authorities</h3>
+                    <p>A Fay–Herriot EBLUP and Bayesian hierarchical model for APS unemployment rates, validated against ONS published model-based estimates. The strongest demonstration of current statistical work on the site.</p>
+                    <div class="project-tags">
+                        <span>Official Statistics</span>
+                        <span>Fay–Herriot</span>
+                        <span>PyMC</span>
+                        <span>Python</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://areeslindley.github.io/projects-website/projects/small-area-estimation/" class="btn primary">Read the write-up</a>
+                        <a href="https://github.com/areeslindley/projects-website" target="_blank" rel="noopener" class="btn secondary">View on GitHub</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <h3>CineGraph</h3>
+                    <p>An explorable network of 500 films, 285 directors and 17 genres — 3,298 links, generated as an Obsidian vault and a standalone interactive graph.</p>
+                    <div class="project-tags">
+                        <span>Network analysis</span>
+                        <span>Python</span>
+                        <span>Quartz</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://areeslindley.github.io/CineGraph/index.html" class="btn primary">Explore CineGraph</a>
+                        <a href="https://github.com/areeslindley/CineGraph" target="_blank" rel="noopener" class="btn secondary">GitHub</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <h3>SonoGraph</h3>
+                    <p>CineGraph’s musical twin: 581 tracks, 351 artists and 229 genres, with 6,369 links. Same visual language, a denser dataset.</p>
+                    <div class="project-tags">
+                        <span>Network analysis</span>
+                        <span>Python</span>
+                        <span>Quartz</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://areeslindley.github.io/SonoGraph/index.html" class="btn primary">Explore SonoGraph</a>
+                        <a href="https://github.com/areeslindley/SonoGraph" target="_blank" rel="noopener" class="btn secondary">GitHub</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <h3>Legislative drafting with LangChain and Claude</h3>
+                    <p>A LangChain + Claude API tool for automating legislative drafting, built at the No.10 / Evidence House AI hackathon. Third place nationally.</p>
+                    <div class="project-tags">
+                        <span>LangChain</span>
+                        <span>Claude API</span>
+                        <span>Agentic AI</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="projects/legislative-drafting.html" class="btn primary">Read the write-up</a>
+                    </div>
+                </article>
             </div>
         </section>
     </main>
@@ -72,14 +131,14 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-info">
-                    <h3>Alun Rees</h3>
+                    <p class="footer-name">Alun Rees-Lindley</p>
                     <p>Data Scientist | Statistical Methodologist | Developer</p>
                 </div>
                 <div class="footer-links">
                     <a href="https://github.com/areeslindley" target="_blank" rel="noopener" aria-label="GitHub">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/alun-rees/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                    <a href="https://www.linkedin.com/in/alun-rees-lindley/" target="_blank" rel="noopener" aria-label="LinkedIn">
                         <i class="fab fa-linkedin"></i>
                     </a>
                     <a href="mailto:alun.rees-lindley@outlook.com" aria-label="Email">
@@ -88,7 +147,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Alun Rees. All rights reserved.</p>
+                <p>&copy; 2026 Alun Rees-Lindley. All rights reserved.</p>
             </div>
         </div>
     </footer>

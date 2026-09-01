@@ -3,7 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog | Alun Rees</title>
+    <title>Blog | Alun Rees-Lindley</title>
+    <meta name="description" content="Writing on seasonal adjustment, sports analytics, and applied statistics.">
+    <link rel="canonical" href="https://areeslindley.github.io/blog.html">
+    <meta property="og:title" content="Blog | Alun Rees-Lindley">
+    <meta property="og:description" content="Writing on seasonal adjustment, sports analytics, and applied statistics.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://areeslindley.github.io/blog.html">
+    <meta property="og:image" content="https://areeslindley.github.io/images/og-preview.png">
+    <meta name="twitter:card" content="summary_large_image">
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
@@ -15,16 +23,18 @@
     <link rel="stylesheet" href="css/visualizations.css">
 </head>
 <body>
+    <a class="skip-link" href="#main">Skip to content</a>
     <nav class="navbar">
         <div class="nav-content">
             <div class="logo">
-                <a href="index.html">AR</a>
+                <a href="index.html">ARL</a>
             </div>
             <div class="nav-links">
                 <a href="index.html">Home</a>
                 <a href="about.html">About</a>
                 <a href="https://areeslindley.github.io/projects-website/intro.html">Projects</a>
                 <a href="https://areeslindley.github.io/CineGraph/index.html">CineGraph</a>
+                <a href="https://areeslindley.github.io/SonoGraph/index.html">SonoGraph</a>
                 <a href="career.html">Career</a>
                 <a href="blog.html" class="active">Blog</a>
                 <a href="contact.html">Contact</a>
@@ -37,13 +47,30 @@
         </div>
     </nav>
 
-    <main>
+    <main id="main">
         <section class="blog-hero">
             <div class="blog-content">
                 <h1>Blog</h1>
-                <p class="blog-intro">Thoughts, insights, and technical articles about data science and development.</p>
-                <div class="blog-empty">
-                    <p>No posts yet.</p>
+                <p class="blog-intro">Notes on statistical methodology, sports analytics, and applied data science.</p>
+                <div class="blog-grid">
+                    <article class="blog-card">
+                        <p class="blog-meta">Methodology · 2026</p>
+                        <h2><a href="blog/residual-seasonality.html">Residual seasonality in GDP, in public</a></h2>
+                        <p>A short, public-facing account of why residual seasonality still matters for published GDP, and how official statisticians test for it. This is a personal summary, not an official ONS publication.</p>
+                        <a href="blog/residual-seasonality.html" class="btn secondary">Read the note</a>
+                    </article>
+                    <article class="blog-card">
+                        <p class="blog-meta">Sports analytics · February 2026</p>
+                        <h2><a href="blog/super-bowl-lx.html">Predicting Super Bowl LX</a></h2>
+                        <p>A locked pre-game Elo and historical-simulation model for Seahawks vs Patriots. Seattle came in around 60% — and the write-up was published before kick-off.</p>
+                        <a href="blog/super-bowl-lx.html" class="btn secondary">Read the intro</a>
+                    </article>
+                    <article class="blog-card">
+                        <p class="blog-meta">Sports analytics · Significance</p>
+                        <h2><a href="blog/six-nations.html">Six Nations, for Significance magazine</a></h2>
+                        <p>A published piece on the Six Nations Championship. Short intro here; the article itself lives at Significance.</p>
+                        <a href="blog/six-nations.html" class="btn secondary">Read the intro</a>
+                    </article>
                 </div>
             </div>
         </section>
@@ -53,14 +80,14 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-info">
-                    <h3>Alun Rees</h3>
+                    <p class="footer-name">Alun Rees-Lindley</p>
                     <p>Data Scientist | Statistical Methodologist | Developer</p>
                 </div>
                 <div class="footer-links">
                     <a href="https://github.com/areeslindley" target="_blank" rel="noopener" aria-label="GitHub">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/alun-rees/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                    <a href="https://www.linkedin.com/in/alun-rees-lindley/" target="_blank" rel="noopener" aria-label="LinkedIn">
                         <i class="fab fa-linkedin"></i>
                     </a>
                     <a href="mailto:alun.rees-lindley@outlook.com" aria-label="Email">
@@ -69,7 +96,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Alun Rees. All rights reserved.</p>
+                <p>&copy; 2026 Alun Rees-Lindley. All rights reserved.</p>
             </div>
         </div>
     </footer>
