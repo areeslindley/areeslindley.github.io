@@ -1,0 +1,5 @@
+# Static HTML site at the repository root.
+# Never set `base` to an absolute build-image path such as /opt/build.
+# That path is not a folder in this repo and fails on current Netlify images.
+[build]
+  publish = "."
